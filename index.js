@@ -25,6 +25,10 @@ app.post('/Sign', async (req, res) => {
         password:password });
         res.send("user created");
 });
+app.use((err, req, res, next) => {
+  console.error("Server Error:", err);
+  res.status(500).json({ error: err.message });
+});
 app.listen(3000, () => {
     console.log('Server is running on http://localhost:3000');
 });         
