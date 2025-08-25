@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Shopping Store</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background: #2a9d8f;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav {
+      background: #264653;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .card p {
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 16px;
+      color: #e76f51;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 15px;
+      background: #2a9d8f;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #21867a;
+    }
+
+    footer {
+      background: #264653;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Online Store</h1>
+  </header>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="Shop">Shop</a>
+    <a href="Contact">Contact</a>
+    <a href="Sign">Sign up</a>
+</nav>
+
+  <div class="container">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Short description of product 1.</p>
+        <p class="price">$25.00</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>Short description of product 2.</p>
+        <p class="price">$40.00</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>Short description of product 3.</p>
+        <p class="price">$60.00</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Product 4">
+        <h3>Product 4</h3>
+        <p>Short description of product 4.</p>
+        <p class="price">$80.00</p>
+        <a href="#" class="btn">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Online Store | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
